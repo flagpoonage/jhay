@@ -24,8 +24,13 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-ol, ul {
-	list-style: none;
+ul {
+  margin: 1rem 0;
+}
+
+li {
+  padding: 0.5rem 0;
+  line-height: 1.4rem;
 }
 
 blockquote, q {
@@ -58,6 +63,7 @@ table {
   --c5: #47D163;
   --c5-light: #47D16322;
   --text: #525252;
+  --htext: #344d9d;
 }
 
 html, body {
@@ -89,13 +95,20 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
-  margin: 2rem 0;
-  text-align: center;
+  margin-bottom: 2rem;
   font-weight: bold;
+}
+
+h4 {
+  font-weight: bold;
+  color: var(--htext);
+  margin-bottom: 1rem;
+  line-height: 1.4rem;
 }
 
 p {
   line-height: 1.4rem;
+  font-style: italic;
 }
 
 p + p {
@@ -113,7 +126,7 @@ hr {
 }
 
 main {
-  padding: 1rem 2rem;
+  padding: 2rem;
   width: 45rem;
   max-width: 100vw;
   margin: auto;
@@ -161,13 +174,12 @@ main {
   background-color: var(--c5-light);
 }
 
-.blurb-main {
-  font-style: italic;
+section {
   padding: 2rem;
 }
 
 @media screen and (max-width: 45em) {
-  .blurb-main {
+  section {
     padding: 2rem 0;
   }
 }
