@@ -1,0 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --c1: #4968D1;
+  --c1-light: #4968D122;
+  --c2: #3B9CDB;
+  --c3: #22C0C2;
+  --c3-light: #22C0C222;
+  --c4: #38D99A;
+  --c5: #47D163;
+  --c5-light: #47D16322;
+  --text: #333;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  font-size: 16px;
+  font-family: 'Overpass', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--c1);
+  letter-spacing: -0.1rem;
+  padding:1rem 0;
+  line-height: 4rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #777777;
+  letter-spacing: -0.02rem;
+  line-height: 1.3em;
+}
+
+main {
+  width: 50rem;
+  max-width: 100vw;
+  margin: auto;
+}
+
+.header-main {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 40vh;
+  flex-direction: column;
+}
+
+.nav-social {
+  padding: 1rem 0;
+}
+
+.social-anchor {
+  text-decoration: none;
+  padding: 0.8rem;
+  display: inline-block;
+  outline: none;
+  border-radius: 0.1rem;
+  transition: background-color ease-out 0.15s;
+}
+
+
+.social-github {
+  fill: var(--c1);
+}
+
+.github:hover {
+  background-color: var(--c1-light);
+}
+
+.social-linkedin {
+  fill: var(--c3);
+}
+
+.linkedin:hover {
+  background-color: var(--c3-light);
+}
+
+.social-stackoverflow {
+  fill: var(--c5);
+}
+
+.stackoverflow:hover {
+  background-color: var(--c5-light);
+}
+
+hr {
+  margin: 1rem 2rem;
+  border: none;
+  background: var(--c1);
+  height: 2px;
+  background: -moz-linear-gradient(90deg, var(--c1) 0%, var(--c2) 25%, var(--c3) 50%, var(--c4) 75%, var(--c5) 100%);
+  background: -webkit-linear-gradient(90deg, var(--c1) 0%, var(--c2) 25%, var(--c3) 50%, var(--c4) 75%, var(--c5) 100%);
+  background: linear-gradient(90deg, var(--c1) 0%, var(--c2) 25%, var(--c3) 50%, var(--c4) 75%, var(--c5) 100%);
+}
+
+@media screen and (max-width: 500px){
+  hr {
+    display: none;
+  }
+}
