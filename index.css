@@ -166,6 +166,12 @@ main {
   padding: 2rem;
 }
 
+@media screen and (max-width: 45em) {
+  .blurb-main {
+    padding: 2rem 0;
+  }
+}
+
 @media print {
   html, body {
     background-color: initial;
