@@ -52,6 +52,7 @@ table {
 }
 
 :root {
+  --bg: #f3f3f3;
   --c1: #4968D1;
   --c1-light: #4968D122;
   --c2: #3B9CDB;
@@ -60,7 +61,7 @@ table {
   --c4: #38D99A;
   --c5: #47D163;
   --c5-light: #47D16322;
-  --text: #333;
+  --text: #525252;
 }
 
 html, body {
@@ -68,11 +69,13 @@ html, body {
   width: 100vw;
   font-size: 16px;
   font-family: 'Overpass', sans-serif;
+  background-color: var(--bg);
 }
 
 h1 {
   font-size: 3rem;
-  color: var(--c1);
+  font-weight: bold;
+  color: var(--text);
   letter-spacing: -0.1rem;
   padding:1rem 0;
   line-height: 4rem;
@@ -80,7 +83,7 @@ h1 {
 
 h2 {
   font-size: 1.2rem;
-  color: #595959;
+  color: var(--text);
   letter-spacing: -0.02rem;
   line-height: 1.3em;
 }
@@ -95,7 +98,7 @@ main {
   text-align: center;
   display: flex;
   justify-content: center;
-  height: 40vh;
+  min-height: 40vh;
   flex-direction: column;
 }
 
@@ -147,8 +150,12 @@ hr {
   background: linear-gradient(90deg, var(--c1) 0%, var(--c2) 25%, var(--c3) 50%, var(--c4) 75%, var(--c5) 100%);
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 400px) {
+  main {
+    padding: 1rem 2rem;
+  }
+
   hr {
-    display: none;
+    margin: 1rem 0;
   }
 }
