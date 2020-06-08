@@ -85,23 +85,24 @@ h1 {
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: var(--text);
   letter-spacing: -0.02rem;
-  line-height: 1.3em;
+  line-height: 1.4em;
   max-width: 30rem;
   margin: 0 auto;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 2rem;
   font-weight: bold;
 }
 
 h4 {
   font-weight: bold;
-  color: var(--htext);
+  font-size: 1.2rem;
+  color: var(--c1);
   margin-bottom: 1rem;
   line-height: 1.4rem;
 }
@@ -109,6 +110,7 @@ h4 {
 p {
   line-height: 1.4rem;
   font-style: italic;
+  color: var(--text);
 }
 
 p + p {
@@ -176,6 +178,18 @@ main {
 
 section {
   padding: 2rem;
+}
+
+article {
+  margin: 2rem 0;
+}
+
+.employment-date {
+  display: block;
+  margin-top: -0.5rem;
+  font-size: 0.9rem;
+  color: var(--text);
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 45em) {
