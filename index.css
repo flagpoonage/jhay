@@ -117,7 +117,7 @@ p + p {
   margin-top: 1.4rem;
 }
 
-hr {
+.section-boundary {
   margin: 1rem 0;
   border: none;
   background: var(--c1);
@@ -125,6 +125,41 @@ hr {
   background: -moz-linear-gradient(90deg, var(--c1) 0%, var(--c2) 25%, var(--c3) 50%, var(--c4) 75%, var(--c5) 100%);
   background: -webkit-linear-gradient(90deg, var(--c1) 0%, var(--c2) 25%, var(--c3) 50%, var(--c4) 75%, var(--c5) 100%);
   background: linear-gradient(90deg, var(--c1) 0%, var(--c2) 25%, var(--c3) 50%, var(--c4) 75%, var(--c5) 100%);
+}
+
+.responsibility-boundary {
+  width: 5px;
+  height: 5px;
+  border: none;
+  background-color: var(--c3);
+  position: relative;
+  border-radius: 50%;
+  overflow: visible;
+  margin: 1.5rem  auto;
+}
+
+.responsibility-boundary:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 5px;
+  height: 5px;
+  background-color: var(--c1);
+  border-radius: 50%;
+}
+
+.responsibility-boundary:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 5px;
+  height: 5px;
+  background-color: var(--c5);
+  border-radius: 50%;
 }
 
 main {
@@ -201,6 +236,7 @@ article {
 @media print {
   html, body {
     background-color: initial;
+    font-size: 14px;
   }
 
   h1 {
