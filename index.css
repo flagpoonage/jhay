@@ -1,6 +1,9 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/* 
+  Modified version of eric meyers reset.
+
+  http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -219,12 +222,70 @@ article {
   margin: 2rem 0;
 }
 
+.employment-header {
+  display: flex;
+}
+
+.employment-title {
+  flex: 1 1 auto;
+}
+
+.employment-content {
+  display: none;
+}
+
+.employment-content[data-expanded] {
+  display: block;
+}
+
+.employment-expand {
+  margin-left: 1rem;
+}
+
+.expand {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border: solid 2px var(--c1-light);
+  border-radius: 0.2rem;
+  height: 2rem;
+  transition: background-color ease-out 0.1s;
+}
+
+.expand:hover {
+  background-color: var(--c1-light);
+}
+
+.expand-icon {
+  transform: rotate(0deg);
+  transition: transform ease-out 0.1s;
+  vertical-align: middle;
+}
+
+.expand-icon path {
+  fill: var(--c1);
+}
+
+.expand[data-expanded] .expand-icon {
+  transform: rotate(180deg);
+}
+
 .employment-date {
   display: block;
   margin-top: -0.5rem;
   font-size: 0.9rem;
   color: var(--text);
   margin-bottom: 1rem;
+}
+
+.page-break {
+  display: none;
+  border: none;
+  background-color: transparent;
+  page-break-after: always;
+  height: 0;
+  width: 100%;
 }
 
 @media screen and (max-width: 45em) {
@@ -254,11 +315,19 @@ article {
   }
 
   .page-break {
-    page-break-after: always;
+    display: block;
   }
   
   .nav-social {
     padding: 0.5rem 0;
+  }
+
+  .employment-content {
+    display: block;
+  }
+
+  .employment-expand {
+    display: none;
   }
 
   main {
