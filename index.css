@@ -294,10 +294,11 @@ article {
   margin: 1rem 0;
 }
 
-.competency-level {
+.competency-level {    
   color: var(--text);
   font-size: 1rem;
-  margin-top: 2rem;
+  font-weight: normal;
+  font-style: italic;
 }
 
 .competency {
