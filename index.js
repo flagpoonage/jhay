@@ -21,7 +21,7 @@ window.addEventListener('click', ev => {
 function expand (target, source) {
   target.setAttribute(EXPANDED_STATE, '');
   source.setAttribute(EXPANDED_STATE, '');
-  source.setAttribute('title', source.dataset.expandedTitle);
+  source.swerwetAttribute('title', source.dataset.expandedTitle);
   source.querySelector('svg title').innerHTML = source.dataset.expandedTitle;
 }
 
