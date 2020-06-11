@@ -60,10 +60,16 @@ table {
   --c1: #4968D1;
   --c1-light: #4968D122;
   --c2: #3B9CDB;
+  --c2-text: #268bcf;
+  --c2-light: #3B9CDB22;
   --c3: #22C0C2;
+  --c3-text: #1b9698;
   --c3-light: #22C0C222;
   --c4: #38D99A;
+  --c4-text: #1e9f6d;
+  --c4-light: #38D99A22;
   --c5: #47D163;
+  --c5-text: #279b3e;
   --c5-light: #47D16322;
   --text: #525252;
   --htext: #344d9d;
@@ -281,6 +287,55 @@ article {
 
 .section-blurb {
   margin-bottom: 1rem;
+}
+
+.competency-list {    
+  margin: 1rem 0;
+}
+
+.competency-level {
+  color: var(--text);
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.competency {
+  display: inline-block;
+  padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+  color: var(--c1);
+  margin: 0.25rem 0.1rem;
+  line-height: 0.9rem;
+  vertical-align: baseline;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+  border: solid 2px var(--c1-light);
+  border-radius: 0.2rem;
+}
+
+.competency-list:nth-child(3) .competency {
+  color: var(--c1);
+  border: solid 2px var(--c1-light);
+}
+
+.competency-list:nth-child(5) .competency {
+  color: var(--c2-text);
+  border: solid 2px var(--c2-light);
+}
+
+.competency-list:nth-child(7) .competency {
+  color: var(--c3-text);
+  border: solid 2px var(--c3-light);
+}
+
+.competency-list:nth-child(9) .competency {
+  color: var(--c4-text);
+  border: solid 2px var(--c4-light);
+}
+
+.competency-list:nth-child(11) .competency {
+  color: var(--c5-text);
+  border: solid 2px var(--c5-light);
 }
 
 .page-break {
