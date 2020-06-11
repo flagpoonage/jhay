@@ -82,6 +82,7 @@ html, body {
   font-size: 16px;
   font-family: 'Overpass', sans-serif;
   background-color: var(--bg);
+  overflow-x: hidden;
 }
 
 h1 {
@@ -357,6 +358,7 @@ article {
   html, body {
     background-color: initial;
     font-size: 14px;
+    overflow-x: initial;
   }
 
   h1 {
