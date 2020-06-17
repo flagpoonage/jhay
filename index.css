@@ -221,6 +221,15 @@ main {
   background-color: var(--c5-light);
 }
 
+.cv-only a {
+  display: inline-block;
+  margin: 1rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--c1);
+  font-weight: bold;
+}
+
 section {
   padding: 2rem;
 }
